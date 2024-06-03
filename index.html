@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form class="filter-form">
+        
+        <select id="category" name="category">
+            <option value="">Всі категорії</option>
+            <option value="smartphones">Сматрфони</option>
+            <option value="electronics">Електроніка</option>
+            <option value="clothing">Одяг</option>
+            <option value="home">Для дому</option>
+            <option value="books">Книги</option>
+        </select>
+
+        
+        <input type="text" id="search" name="search" placeholder="Введіть назву товару">
+
+     
+        <select id="sort" name="sort">
+            <option value="price-asc">Ціна: за зростанням</option>
+            <option value="price-desc">Ціна: за спаданням</option>
+            <option value="date-asc">Новизна: за зростанням</option>
+            <option value="date-desc">Новизна: за спаданням</option>
+        </select>
+    </form>
+
+    <div class="product-list" id="product-list">
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
